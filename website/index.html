@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seaton Valley App</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://use.fontawesome.com/57bd5a41e4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<section id="home">
+		<div id="header">
+			<nav>
+				<ul>
+					<a href="#home"><li>Home</li></a>
+					<a href="#guide"><li>Guide</li></a>
+					<a href="#faq"><li>FAQ</li></a>
+				</ul>
+			</nav>
+			<div id="hamburger-menu" onClick="toggleMenu()">
+				<label>&#9776;</label>
+			</div>
+			<div id="logo">
+				<span>Seaton<br> Valley</span>
+			</div>
+		</div>
+		<div id="menu-items">
+			<div class="menu-item"><a href="#home">Home</a></div>
+			<div class="menu-item"><a href="#guide">Guide</a></div>
+			<div class="menu-item"><a href="#faq">FAQ</a></div>
+		</div>
+		<div id="intro-content">
+			<div class="left-content">
+				<div class="phone">
+					<img src="images/welcome-page.svg" alt="seaton-valley-app">
+				</div>
+			</div>
+			<div class="right-content">
+				<div class="centralised-content">
+					<div class="details">
+						<div class="subheading"><h1>Seaton Valley Android App</h1></div>
+						<div class="heading-text"><p>Seaton Valley is a local community council operating in the South East area of Northumberland.
+            This page will provide information on the Android App which you can find out more information about in the Guide section below.
+            The app consists of numerous functionalities including pages that are fully dedicated to key areas of interest. These consist of
+            <strong>News</strong>, <strong>Events</strong>, <strong>Meetings</strong>, <strong>Information</strong>,
+            <strong>Map</strong>, <strong>Contact</strong> and <strong>Social Media</strong>. You may also contact the Council to provide constructive
+            feedback through our <strong>Make a complaint</strong> page.</p></div>
+					</div>
+					<div class="details">
+						<div class="subheading"><h1>More Seaton Valley...</h1></div>
+						<div class="heading-text"><p>If you weren't looking for Seaton Valley's Android app there are other pages dedicated to the Council
+            that you may find useful. Reach out to more members of the community below:</p>
+          </div>
+          <div id="social-media">
+            <ul>
+              <li><a href="http://seatonvalleycommunitycouncil.gov.uk">Seaton Valley Website</a></li>
+              <li><a href="https://www.facebook.com/seatonvalleycommunitycouncil">Facebook page</a></li>
+              <li><a href="https://twitter.com/SeatonValleyCC">Twitter feed</a></li>
+            </ul>
+          </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  <section id="guide">
+    <div id="menu-img">
+      <img src="images/menu-toggledOn.svg" alt="Seaton Valley App Menu">
+    </div>
+    <div id="guide-list">
+      <div class="subheading">
+        <h1>Guide</h1>
+        <p id="guide-intro">Below is a guide on how to use our app! There is information on how to download and install the app and a description of how you can utilise all the features.</p>
+      </div>
+      <div id="menu-descriptions">
+        <div class="menu-description">
+          <div id="menu1" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>News</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">Our news feature allows you to be able to read about the most recent updates in our local area.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu2" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Events</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">If you enjoy getting involved with your community then you'll love this feature. By using our Events
+          feature you can view all the upcoming events within your area which will allow you to meet new people and get more involved with your council.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu3" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Meetings</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">Navigate yourself to this part of the app if you'd like to find out more information about upcoming council meetings. </div>
+        </div>
+        <div class="menu-description">
+          <div id="menu4" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Information</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">If you're seeking more information about the opening times of the Seaton Valley building or more information
+          about Northumberland County Council's Waste service. Access to that information can be found on the Information page.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu5" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Map</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">The map page allows you to find your location relative to everything else in your surroundings. You are also able to view events, meetings
+          and activities that are pinned on the map.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu6" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Contact</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">Find out more information on how best to contact the council.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu7" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Social Media</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">Keep updated with all things Seaton Valley related by keeping up to date with their social media.</div>
+        </div>
+        <div class="menu-description">
+          <div id="menu8" class="menu-title" onClick="dropdown(this.id)"><span class="description-content"><span>Make a complaint</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+          <div class="menu-expand">We understand that problems can occur within the community. Our Make a complaint feature allows you to contact
+          a member of the council who will try their best to be of assistance.</div>
+        </div>
+        <div id="playstore">
+          <a href="http://retrohub.co.uk/app.php"><img src="images/google-play.png" alt="Goog Play Store button"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+	<section id="faq">
+		<div id="title">
+			<h1>Frequently Asked Questions</h1>
+		</div>
+		<div id="list">
+			<div id="left-list">
+				<div class="question-container">
+					<div id="q1" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>What devices are supported for the app?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>Android phones/tablets that have versions 4.0.3 to versions 8.0+ are supported.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q2" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>Will I have to be connected to the internet to use the app?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>For the best user experience we recommend that you have a working internet connection as some features such as the social media, maps and active hyperlinks require an internet connection.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q3" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>Can I use the app to connect with other members of the community?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>Although there is not a feature that allows members of the community to directly connect you can use our social media features
+          to discover more members of the community online.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q4" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>How do I access the menu shown on the <a href="#guide">Guide</a> page?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>There is a hamburger styled menu in the top left. Click that to toggle on the menu list that's displayed in the <a href="#guide">Guide</a> page.</span></div>
+				</div><br>
+			</div>
+			<div id="right-list">
+				<div class="question-container">
+					<div id="q5" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>Can I download this on iOS?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>Unfortunately at this point in time there is no support for iOS devices.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q6" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>What can I do with the app?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>Your Seaton Valley app will allow you to interact with numerous features. Such pages include a dedicated news page,
+          events page and meeting page amongst others. For a full comprehensive guide check out the <a href="#guide">Guide</a> page.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q7" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>Do I have to be a member of the Seaton Valley community to use the app?</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>There is no need to be a member of the community. There are plenty of options for why you would use this app without being
+          a member of the Seaton Valley community such as attending activities.</span></div>
+				</div><br>
+				<div class="question-container">
+					<div id="q8" class="question" onClick="dropdown(this.id)"><span class="question-content"><span>Will I have to create an account before I use the app?
+</span><span class="icon"><i class="fa fa-angle-down"></i></span></span></div>
+					<div class="answer"><span>There is no need to create an account. We wanted this app to be easy to use and navigate through for every user.</span></div>
+				</div><br>
+			</div>
+		</div>
+		<div id="more-info">
+			<h1>If your question hasn't been answered here feel free to contact us on <a href="mailto:clerk@seatonvalleycommunitycouncil.gov.uk">email</a></h1>
+		</div>
+	</section>
+  <section id="copyright">
+    <span>&copy; Seaton Valley 2018.</span>
+  </section>
+</body>
+
+</html>
